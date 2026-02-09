@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed Cooperate Cleaning | Professional Cleaning Services Uganda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Corporate Cleaning Colors - Professional Blue Theme */
+        :root {
+            --primary: #0056b3;      /* Deep corporate blue */
+            --secondary: #003d82;     /* Darker blue */
+            --accent: #00a859;        /* Corporate green for cleaning/eco */
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --gold: #FFD700;          /* Accent for corporate feel */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Professional Logo Styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-design {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+        }
+        
+        .logo-icon:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+            animation: shine 3s infinite linear;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .logo-icon-inner {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-icon-symbol {
+            font-size: 22px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-main {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+        }
+        
+        .logo-sub {
+            font-size: 11px;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+        
+        .logo-tagline {
+            font-size: 10px;
+            color: var(--gray);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        
+        /* Professional Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 86, 179, 0.2);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: #008f4c;
+        }
+        
+        .btn-gold {
+            background: var(--gold);
+            color: var(--dark);
+        }
+        
+        .btn-gold:hover {
+            background: #e6c200;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+        }
+        
+        .section-title p {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 30px auto 0;
+            line-height: 1.8;
+        }
+        
+        /* Professional Header */
+        header {
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 35px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section - Corporate Cleaning */
+        .hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.9), rgba(0, 61, 130, 0.9)), url('https://images.unsplash.com/photo-1583947581924-860bda6a26df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1480&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, #f5f7fa);
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        /* Emergency Contact Buttons */
+        .emergency-contact {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn.call {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .contact-btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Services Section */
+        .services {
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 1px solid #e9ecef;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary);
+        }
+        
+        .service-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .service-icon {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .service-features li {
+            padding: 5px 0;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-features li:before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Coverage Section */
+        .coverage {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coverage:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1480&q=20');
+            opacity: 0.1;
+            background-size: cover;
+        }
+        
+        .coverage .section-title h2 {
+            color: white;
+        }
+        
+        .coverage .section-title h2:after {
+            background: var(--gold);
+        }
+        
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .coverage-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .coverage-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+        }
+        
+        .coverage-item i {
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+        
+        .coverage-item h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        /* Why Choose Us */
+        .why-choose {
+            background: var(--light);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .feature h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        /* Appointment Section */
+        .appointment {
+            background: white;
+        }
+        
+        .appointment-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+        
+        /* Floating Contact Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .floating-btn.whatsapp {
+            background: #25D366;
+        }
+        
+        .floating-btn.call {
+            background: var(--primary);
+        }
+        
+        .floating-btn.email {
+            background: var(--accent);
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: var(--accent);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gold);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-column ul li i {
+            margin-right: 10px;
+            color: var(--accent);
+            width: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            font-size: 14px;
+        }
+        
+        /* Uganda Badge */
+        .uganda-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: white;
+        }
+        
+        .uganda-badge i {
+            margin-right: 8px;
+            color: var(--gold);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .logo-main {
+                font-size: 20px;
+            }
+            
+            .logo-sub {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+            
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .section-title h2 {
+                font-size: 32px;
+            }
+            
+            .emergency-contact {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .logo-container {
+                gap: 10px;
+            }
+            
+            .logo-icon {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .logo-icon-inner {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .logo-main {
+                font-size: 18px;
+            }
+            
+            .logo-sub {
+                font-size: 9px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                padding: 70px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 100px;
+            }
+            
+            .service-card {
+                margin-bottom: 30px;
+            }
+            
+            .appointment-form {
+                padding: 30px;
+            }
+            
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .floating-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            .logo-main {
+                font-size: 16px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .mobile-logo-text {
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--primary);
+            }
+        }
+        
+        @media (min-width: 577px) {
+            .mobile-logo-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+256759364816" class="floating-btn call" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/256759364816" class="floating-btn whatsapp" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:bashilmwanj@gmail.com" class="floating-btn email" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    
+    <!-- Header with Custom Logo -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-design">
+                    <div class="logo-icon">
+                        <div class="logo-icon-inner">
+                            <div class="logo-icon-symbol">PCC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-main">PROCEED COOPERATE CLEANING</div>
+                    <div class="logo-sub">PROFESSIONAL CLEANING SERVICES</div>
+                    <div class="logo-tagline">UGANDA • CORPORATE • EXCELLENCE</div>
+                </div>
+                <div class="mobile-logo-text">PCC</div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#coverage">Coverage</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#appointment" class="btn btn-accent">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Professional Corporate Cleaning Solutions Across Uganda</h1>
+            <p>Commercial-grade cleaning services for businesses, institutions, and facilities nationwide. ISO-standard cleaning with Ugandan excellence.</p>
+            <div class="emergency-contact">
+                <a href="tel:+256759364816" class="contact-btn call">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>EMERGENCY: +256 759 364 816</span>
+                </a>
+                <a href="https://wa.me/256759364816" class="contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WHATSAPP QUOTE</span>
+                </a>
+            </div>
+            <div class="uganda-badge">
+                <i class="fas fa-map-marker-alt"></i>
+                Head Office: Entebbe, Uganda • Serving Nationwide 🇺🇬
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Professional Cleaning Services</h2>
+                <p>Comprehensive cleaning solutions for corporate, industrial, and institutional clients across Uganda</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Corporate Office Cleaning</h3>
+                        <p>Daily, weekly, and monthly cleaning for corporate offices, banks, and business centers. Professional environment maintenance.</p>
+                        <ul class="service-features">
+                            <li>Daily desk & surface cleaning</li>
+                            <li>Carpet vacuuming & shampooing</li>
+                            <li>Restroom sanitation</li>
+                            <li>Window & glass cleaning</li>
+                            <li>Waste management</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-badge">Specialized</div>
+                    <div class="service-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hospital & Medical Facility Cleaning</h3>
+                        <p>Medical-grade sanitization and sterilization for hospitals, clinics, and healthcare facilities.</p>
+                        <ul class="service-features">
+                            <li>Infection control cleaning</li>
+                            <li>OT/ICU specialized cleaning</li>
+                            <li>Medical waste disposal</li>
+                            <li>High-touch surface disinfection</li>
+                            <li>Bio-hazard cleaning</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-badge">Industrial</div>
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Post-Construction Cleaning</h3>
+                        <p>Complete clean-up after construction projects. Removing debris, dust, and preparing spaces for occupancy.</p>
+                        <ul class="service-features">
+                            <li>Debris removal & disposal</li>
+                            <li>Deep dust cleaning</li>
+                            <li>Window & surface polishing</li>
+                            <li>Floor scrubbing & treatment</li>
+                            <li>Final touch-up cleaning</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>School & Institution Cleaning</h3>
+                        <p>Educational facility cleaning with focus on student safety and hygiene maintenance.</p>
+                        <ul class="service-features">
+                            <li>Classroom & dormitory cleaning</li>
+                            <li>Library & lab sanitation</li>
+                            <li>Cafeteria & kitchen cleaning</li>
+                            <li>Playground maintenance</li>
+                            <li>Waste management systems</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-place-of-worship"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Church & Mosque Cleaning</h3>
+                        <p>Respectful and thorough cleaning for places of worship and religious institutions.</p>
+                        <ul class="service-features">
+                            <li>Sanctuary & prayer hall cleaning</li>
+                            <li>Ablution area sanitation</li>
+                            <li>Carpet & floor care</li>
+                            <li>Event cleanup services</li>
+                            <li>Regular maintenance plans</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Sports Facility Cleaning</h3>
+                        <p>Maintenance of football pitches, stadiums, gyms, and sports complexes.</p>
+                        <ul class="service-features">
+                            <li>Pitch maintenance & lining</li>
+                            <li>Bleacher & seat cleaning</li>
+                            <li>Locker room sanitation</li>
+                            <li>Drainage system cleaning</li>
+                            <li>Post-event cleanup</li>
+                        </ul>
+                        <a href="#appointment" class="btn">Request Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="coverage" id="coverage">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nationwide Service Coverage</h2>
+                <p>Serving corporate clients across all regions of Uganda with our professional cleaning teams</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Central Region</h3>
+                    <p>Kampala, Entebbe, Wakiso, Mukono, Mpigi, Luwero, Nakasongola, Kiboga, Mityana</p>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Eastern Region</h3>
+                    <p>Jinja, Iganga, Mbale, Soroti, Tororo, Busia, Kamuli, Pallisa, Kumi</p>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Western Region</h3>
+                    <p>Mbarara, Fort Portal, Kabale, Kasese, Hoima, Masaka, Bushenyi, Rukungiri</p>
+                </div>
+                <div class="coverage-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Northern Region</h3>
+                    <p>Gulu, Lira, Kitgum, Arua, Nebbi, Adjumani, Masindi, Pakwach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Proceed Cooperate Cleaning</h2>
+                <p>Professional cleaning solutions that exceed corporate standards</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Certified Professionals</h3>
+                    <p>Our staff undergo rigorous training and certification in modern cleaning techniques and safety protocols.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insured & Bonded</h3>
+                    <p>Full insurance coverage for your peace of mind. We're licensed and bonded for commercial cleaning.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Products</h3>
+                    <p>We use environmentally friendly cleaning products that are effective yet safe for people and pets.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Emergency cleaning services available round the clock. Quick response times across Uganda.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Modern Equipment</h3>
+                    <p>State-of-the-art cleaning equipment and technology for superior results every time.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Corporate Experience</h3>
+                    <p>Extensive experience serving multinational corporations, government institutions, and NGOs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="section-title">
+                <h2>Request a Professional Quote</h2>
+                <p>Get a customized cleaning proposal for your facility. We respond within 2 hours.</p>
+            </div>
+            <div class="appointment-form">
+                <form id="cleaningQuoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization *</label>
+                            <input type="text" id="company" placeholder="Your company name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (WhatsApp) *</label>
+                            <input type="tel" id="phone" placeholder="Your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Facility Location *</label>
+                        <input type="text" id="location" placeholder="District, Town, Street" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-type">Service Type *</label>
+                            <select id="service-type" required>
+                                <option value="">Select service</option>
+                                <option value="office">Corporate Office Cleaning</option>
+                                <option value="hospital">Hospital/Medical Cleaning</option>
+                                <option value="construction">Post-Construction Cleaning</option>
+                                <option value="school">School/Institution Cleaning</option>
+                                <option value="worship">Church/Mosque Cleaning</option>
+                                <option value="sports">Sports Facility Cleaning</option>
+                                <option value="event">Post-Event Cleaning</option>
+                                <option value="dump">Dump Site Management</option>
+                                <option value="landscaping">Landscape Trimming</option>
+                                <option value="other">Other Cleaning Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="property-size">Property Size *</label>
+                            <select id="property-size" required>
+                                <option value="">Select size</option>
+                                <option value="small">Small (Under 5,000 sq ft)</option>
+                                <option value="medium">Medium (5,000 - 20,000 sq ft)</option>
+                                <option value="large">Large (20,000 - 50,000 sq ft)</option>
+                                <option value="xlarge">Extra Large (50,000+ sq ft)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="frequency">Cleaning Frequency *</label>
+                        <select id="frequency" required>
+                            <option value="">Select frequency</option>
+                            <option value="daily">Daily Service</option>
+                            <option value="weekly">Weekly Service</option>
+                            <option value="biweekly">Bi-Weekly Service</option>
+                            <option value="monthly">Monthly Service</option>
+                            <option value="one-time">One-Time Service</option>
+                            <option value="emergency">Emergency Cleaning</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget (UGX)</label>
+                        <select id="budget">
+                            <option value="">Select budget range</option>
+                            <option value="500k-1m">500,000 - 1,000,000 UGX</option>
+                            <option value="1m-3m">1,000,000 - 3,000,000 UGX</option>
+                            <option value="3m-5m">3,000,000 - 5,000,000 UGX</option>
+                            <option value="5m-10m">5,000,000 - 10,000,000 UGX</option>
+                            <option value="10m+">10,000,000+ UGX</option>
+                            <option value="quote">Request Custom Quote</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Requirements</label>
+                        <textarea id="message" rows="5" placeholder="Specific cleaning needs, special instructions, preferred schedule, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level</label>
+                        <select id="urgency">
+                            <option value="">Select urgency</option>
+                            <option value="immediate">Immediate (Within 24 hours)</option>
+                            <option value="urgent">Urgent (Within 3 days)</option>
+                            <option value="planned">Planned (Within 1-2 weeks)</option>
+                            <option value="future">Future Planning (1+ month)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; padding: 18px; font-size: 18px;">
+                        <i class="fas fa-paper-plane"></i> REQUEST PROFESSIONAL QUOTE
+                    </button>
+                    
+                    <p style="text-align: center; margin-top: 20px; color: var(--gray); font-size: 14px;">
+                        <i class="fas fa-shield-alt"></i> Your information is secure and will not be shared with third parties.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo-container" style="justify-content: flex-start; margin-bottom: 20px;">
+                        <div class="logo-design">
+                            <div class="logo-icon">
+                                <div class="logo-icon-inner">
+                                    <div class="logo-icon-symbol">PCC</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo-text">
+                            <div class="logo-main" style="color: white; font-size: 18px;">PROCEED COOPERATE CLEANING</div>
+                            <div class="logo-sub" style="color: var(--accent);">PROFESSIONAL CLEANING SERVICES</div>
+                        </div>
+                    </div>
+                    <p>Professional cleaning solutions for corporate Uganda. Serving businesses, institutions, and facilities nationwide with excellence and reliability.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/256759364816" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="uganda-badge">
+                        <i class="fas fa-certificate"></i>
+                        Licensed & Insured • URSB Registered
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Corporate Office Cleaning</a></li>
+                        <li><a href="#services">Hospital & Medical Cleaning</a></li>
+                        <li><a href="#services">Post-Construction Cleaning</a></li>
+                        <li><a href="#services">School & Institution Cleaning</a></li>
+                        <li><a href="#services">Church & Mosque Cleaning</a></li>
+                        <li><a href="#services">Sports Facility Cleaning</a></li>
+                        <li><a href="#services">Post-Event Cleaning</a></li>
+                        <li><a href="#services">Dump Site Management</a></li>
+                        <li><a href="#services">Landscape Trimming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#coverage">Coverage Areas</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#appointment">Get Quote</a></li>
+                        <li><a href="#appointment">Emergency Cleaning</a></li>
+                        <li><a href="#appointment">Contract Cleaning</a></li>
+                        <li><a href="#appointment">Become Partner</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +256 759 364 816 (Primary)</li>
+                        <li><i class="fas fa-phone"></i> +256 781 782 696 (WhatsApp)</li>
+                        <li><i class="fas fa-envelope"></i> bashilmwanj@gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> info@proceedcleaning.co.ug</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Head Office: Entebbe, Uganda</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
+                        <li><i class="fas fa-briefcase"></i> Corporate Inquiries Welcome</li>
+                    </ul>
+                    <div class="uganda-badge" style="margin-top: 20px;">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Serving All Uganda 🇺🇬
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Proceed Cooperate Cleaning Company Uganda. All rights reserved. | URSB Registration: PC-2024-UG-78910 | VAT: 1012345678</p>
+                <p style="margin-top: 10px; font-size: 12px;">Professional Cleaning Services • Corporate Solutions • Nationwide Coverage</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    nav.classList.remove('active');
+                }
+            });
+        });
+        
+        // Form submission
+        const cleaningForm = document.getElementById('cleaningQuoteForm');
+        if (cleaningForm) {
+            cleaningForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const company = document.getElementById('company').value;
+                const phone = document.getElementById('phone').value;
+                const email = document.getElementById('email').value;
+                const location = document.getElementById('location').value;
+                const serviceType = document.getElementById('service-type').value;
+                const propertySize = document.getElementById('property-size').value;
+                const frequency = document.getElementById('frequency').value;
+                const budget = document.getElementById('budget').value;
+                const message = document.getElementById('message').value;
+                const urgency = document.getElementById('urgency').value;
+                
+                // Create WhatsApp message
+                const whatsappMessage = `📋 NEW CLEANING QUOTE REQUEST 📋%0A%0A👤 Name: ${name}%0A🏢 Company: ${company}%0A📞 Phone: ${phone}%0A📧 Email: ${email}%0A📍 Location: ${location}%0A%0A🛠️ SERVICE DETAILS:%0A• Service Type: ${serviceType}%0A• Property Size: ${propertySize}%0A• Frequency: ${frequency}%0A• Budget Range: ${budget}%0A• Urgency: ${urgency}%0A%0A📝 Additional Requirements:%0A${message}%0A%0A📅 Requested on: ${new Date().toLocaleString()}`;
+                
+                // Open WhatsApp with pre-filled message
+                window.open(`https://wa.me/256759364816?text=${whatsappMessage}`, '_blank');
+                
+                // Show confirmation message
+                alert('Thank you for your quote request! We are redirecting you to WhatsApp to provide you with a professional quotation. Our team will respond within 2 hours.');
+                
+                // Reset form
+                this.reset();
+            });
+        }
+        
+        // Set minimum date to today for any date inputs
+        const dateInputs = document.querySelectorAll('input[type="date"]');
+        dateInputs.forEach(input => {
+            const today = new Date().toISOString().split('T')[0];
+            input.setAttribute('min', today);
+        });
+        
+        // Add animation to service cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+        
+        // Auto-hide mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                nav.classList.remove('active');
+            }
+        });
+        
+        // Add loading effect to form submission
+        if (cleaningForm) {
+            cleaningForm.addEventListener('submit', function() {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESSING REQUEST...';
+                submitBtn.disabled = true;
+                
+                // Reset button after 5 seconds if something goes wrong
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 5000);
+            });
+        }
+    </script>
+</body>
+</html>

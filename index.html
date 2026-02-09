@@ -3,34 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Cleaning Services</title>
+    <meta name="description" content="Professional cleaning services for residential and commercial spaces in Uganda. Top-quality service guaranteed.">
+    <title>Proceed Cooperate - Professional Cleaning Services | Uganda</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .service-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #bbb;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pricing-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            .services-grid, .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            button {
+                padding: 12px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Professional Cleaning Services</h1>
+        <h1>🧹 Proceed Cooperate Cleaning Services</h1>
+        <p>Your Trusted Partner for Professional Cleaning Solutions in Uganda</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
+        <!-- About Section -->
+        <section id="about">
             <h2>About Us</h2>
-            <p>We provide top-notch cleaning services for residential and commercial spaces.</p>
+            <p>Welcome to Proceed Cooperate Cleaning Services! We are a dedicated team of professional cleaners committed to providing top-notch cleaning services for both residential and commercial spaces across Uganda.</p>
+            <p style="margin-top: 15px;">With years of experience, trained staff, and eco-friendly cleaning solutions, we ensure your spaces are spotless, sanitized, and safe for your family or business.</p>
         </section>
-        <section>
+
+        <!-- Services Section -->
+        <section id="services">
             <h2>Our Services</h2>
-            <ul>
-                <li>Residential Cleaning</li>
-                <li>Commercial Cleaning</li>
-                <li>Carpet Cleaning</li>
-                <li>Window Cleaning</li>
-            </ul>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🏠 Residential Cleaning</h3>
+                    <p>Professional house cleaning tailored to your needs. We clean kitchens, bathrooms, bedrooms, living areas, and more with attention to detail.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🏢 Commercial Cleaning</h3>
+                    <p>Keep your office, retail space, or facility spotless. Our team handles large-scale cleaning operations with minimal disruption to your business.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🧵 Carpet Cleaning</h3>
+                    <p>Deep carpet and upholstery cleaning using professional-grade equipment and safe cleaning agents to extend the life of your carpets.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🪟 Window Cleaning</h3>
+                    <p>Streak-free window cleaning for residential and commercial properties. We handle interior, exterior, and high-rise windows safely.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🧼 Deep Cleaning</h3>
+                    <p>Comprehensive deep cleaning services that reach every corner, including hard-to-reach areas and hidden spaces in your property.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🛡️ Sanitization</h3>
+                    <p>Professional sanitization and disinfection services to eliminate germs, bacteria, and viruses using approved, safe chemicals.</p>
+                </div>
+            </div>
         </section>
-        <section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Frequency</th>
+                        <th>Price (UGX)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Residential Cleaning</td>
+                        <td>One-time</td>
+                        <td>150,000 - 300,000</td>
+                    </tr>
+                    <tr>
+                        <td>Commercial Cleaning</td>
+                        <td>Monthly</td>
+                        <td>500,000 - 2,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Carpet Cleaning (per room)</td>
+                        <td>One-time</td>
+                        <td>100,000 - 200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Window Cleaning</td>
+                        <td>One-time</td>
+                        <td>80,000 - 150,000</td>
+                    </tr>
+                    <tr>
+                        <td>Deep Cleaning</td>
+                        <td>One-time</td>
+                        <td>300,000 - 500,000</td>
+                    </tr>
+                    <tr>
+                        <td>Sanitization Service</td>
+                        <td>One-time</td>
+                        <td>200,000 - 400,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; text-align: center; color: #666;"><em>Prices may vary based on property size and specific requirements. Contact us for a free quote!</em></p>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Proceed Cooperate did an excellent job cleaning our office. The team was professional, efficient, and left everything spotless!"</p>
+                    <p><strong>- Sarah Mugisha, Business Owner</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Very impressed with their deep cleaning service. They paid attention to every detail and used safe, eco-friendly products."</p>
+                    <p><strong>- David Nakamatte, Homeowner</strong></p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Reliable, affordable, and professional. We've been using their services for over a year and couldn't be happier!"</p>
+                    <p><strong>- Amina Kyambade, Manager</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
             <h2>Contact Us</h2>
-            <p>Email: info@cleaningservices.com</p>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select a Service --</option>
+                            <option value="residential">Residential Cleaning</option>
+                            <option value="commercial">Commercial Cleaning</option>
+                            <option value="carpet">Carpet Cleaning</option>
+                            <option value="window">Window Cleaning</option>
+                            <option value="deep">Deep Cleaning</option>
+                            <option value="sanitization">Sanitization</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your cleaning needs..." required></textarea>
+                    </div>
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+            <div style="text-align: center; margin-top: 30px; padding: 20px; background: white; border-radius: 8px;">
+                <h3 style="color: #4CAF50; margin-bottom: 15px;">Direct Contact Information</h3>
+                <p><strong>📧 Email:</strong> info@proceedcooperate.com</p>
+                <p><strong>📞 Phone:</strong> +256 (0) 123 456 789</p>
+                <p><strong>📍 Location:</strong> Kampala, Uganda</p>
+                <p><strong>⏰ Hours:</strong> Monday - Saturday, 8:00 AM - 6:00 PM</p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Professional Cleaning Services</p>
+        <p>&copy; 2026 Proceed Cooperate Cleaning Services. All rights reserved.</p>
+        <p>Professional Cleaning Solutions for Uganda | <a href="#" style="color: #4CAF50; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #4CAF50; text-decoration: none;">Terms of Service</a></p>
     </footer>
 </body>
 </html>
